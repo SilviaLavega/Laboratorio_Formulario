@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Silvia Lavega</title>
+</head>
+<body>
+    <div class="formContainer">
+    <form>
+        <h1> Create Account </h1>
+        <div class="inputContainer">
+            <label id="Nombre">Nombre</label>
+            <input type="text" name="name" value="" id="name" class="formElement" placeholder="Silvia Lavega" />
+            <span id="nameError" class="error"></span>
+        </div>
+        <div class="inputContainer">
+            <label id="Email">Email</label>
+            <input type="email" name="email" value="" id="email" class="formElement" placeholder="correo@silvia.com" />
+            <span id="emailError" class="error"></span>
+        </div>
+        <div class="inputContainer">
+            <label id="Clave">Clave</label> 
+            <input type="password" name="password" value="" id="password" class="formElement" />
+            <span id="passwordError" class="error"></span>
+        </div>
+        <div class="inputContainer">
+            <label id="ClaveConfirmada">Confirme su clave</label> 
+            <input type="password" name="password2" value="" id="password2" class="formElement" />
+            <span id="password2Error" class="error"></span>
+        </div>
+    <button id="button" onclick="return Name(), Email(), Password(), Password2(), validarForm()">ENVIAR</button>
+    </form>
+    </div>
+    <script src="index.js" type="text/javascript"></script> 
+</body>
+</html>
